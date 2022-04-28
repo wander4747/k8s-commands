@@ -60,5 +60,5 @@ kubectl scale --replicas=3 -f {FILE}
 
 Deleta um replicaset
 ```sh
-kubectl delete replicaset goserver
+kubectl delete replicaset {REPLICASET_NAME}
 ```
