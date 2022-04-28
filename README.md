@@ -37,3 +37,23 @@ Port Forward
 ```sh
 kubectl port-forward pod/{POD_NAME} 8000:8000
 ```
+
+---
+
+### Replicaset
+
+Lista todos os replicasets
+```sh
+kubectl get replicasets
+```
+
+Escala um replicaset
+```sh
+kubectl scale --replicas=2 rs/{REPLICASET_NAME}
+```
+
+
+Escala um replicaset a partir de um yaml
+```sh
+kubectl scale --replicas=3 -f {FILE}
+```
