@@ -1,1 +1,39 @@
-# k8s-commands
+<img src="https://user-images.githubusercontent.com/6461792/165660503-26d415d7-e73c-4690-a975-bc81e6e08c79.svg" alt="drawing" width="300"/>
+
+# Comandos Kubernetes
+Uma lista com alguns comandos do Kubernets para o dia a dia :)
+
+### Pods
+
+Lista todos os pods do namespace atual
+```sh
+kubectl get pods
+```
+
+Lista todos os pods com mais detalhes
+```sh
+kubectl get pods -o wide
+```
+
+Informações do pod
+```sh
+kubectl describe pods {POD_NAME}
+```
+
+Obter o YAML|JSON de um pod
+```sh
+kubectl get pod {POD_NAME} -o yaml 
+```
+```sh
+kubectl get pod {POD_NAME} -o json 
+```
+
+Deletando pod
+```sh
+kubectl delete pod {POD_NAME}
+```
+
+Port Forward
+```sh
+kubectl port-forward pod/{POD_NAME} 8000:8000
+```
