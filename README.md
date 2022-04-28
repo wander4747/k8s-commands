@@ -62,3 +62,27 @@ Deleta um replicaset
 ```sh
 kubectl delete replicaset {REPLICASET_NAME}
 ```
+
+---
+
+### Deployment
+
+Lista todos os deployments
+```sh
+kubectl get deployments
+```
+
+Informações de um deployment específico
+```sh
+kubectl get deployment {DEPLOYMENT_NAME}
+```
+
+Escala um deployment
+```sh
+kubectl scale --replicas=3 deployment/{DEPLOYMENT_NAME}
+```
+
+Escala um deployment
+```sh
+kubectl autoscale deployment {DEPLOYMENT_NAME} --min=2 --max=10 
+```
