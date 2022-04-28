@@ -57,3 +57,8 @@ Escala um replicaset a partir de um yaml
 ```sh
 kubectl scale --replicas=3 -f {FILE}
 ```
+
+Deleta um replicaset
+```sh
+kubectl delete replicaset goserver
+```
