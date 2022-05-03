@@ -86,3 +86,26 @@ Escala um deployment
 ```sh
 kubectl autoscale deployment {DEPLOYMENT_NAME} --min=2 --max=10 
 ```
+
+Delete um deployment
+```sh
+kubectl delete deployment {DEPLOYMENT_NAME}
+```
+
+---
+
+### Service
+Lista todos os services
+```sh
+kubectl get services
+```
+
+Informações de um service específico
+```sh
+kubectl get service {SERVICE_NAME}
+```
+
+Deleta um service
+```sh
+kubectl delete service {SERVICE_NAME}
+```
